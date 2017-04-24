@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3属性书写顺序重要性测试</title>
+<style>
+  p {
+    margin: 20px;
+    width: 300px;
+  }
+  #wrongway { background: #ccc; padding: 30px;
+    border-radius: 30px 10px;
+    -webkit-border-radius: 30px 10px;
+  }
+  #rightway { background: #ccc; padding: 30px;
+    -webkit-border-radius: 30px 10px;
+    border-radius: 30px 10px;
+  }
+</style>
+</head>
+
+<body>
+  <p id="wrongway">错误方式</p>
+  <p id="rightway">正确方式</p>
+</body>
+</html>
