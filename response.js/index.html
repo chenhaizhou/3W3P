@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>3周3页面</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<div class="logo">
+						<strong>Thought</strong>Works<sup>®</sup>
+					</div>
+					<h1>3周3页面</h1>
+					<h3>Adaptive，Responsive</h3>
+					<p>
+						<small>Created by <a href="http://blog.c-hz.cn">Haizhou Chen</a></small>
+					</p>
+				</section>
+				<section data-background="#fff">
+					<img src="images/p0.jpg" alt="" style="max-height:600px;max-width:auto;box-shadow:none">
+				</section>
+				<section>
+					<h2>AWD</h2>
+					<p>Adaptive Web Design</p>
+				</section>
+
+				<section data-background="#fff">
+					<img src="images/p1.jpg" alt="" style="box-shadow:none;height:100%;width:80%">
+					
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<h2>RWD</h2>
+					<p>Responsive Web Design</p>
+				</section>
+				<section data-background="#fff">
+					<img src="images/p2.jpg" alt="" style="box-shadow:none">
+				</section>
+				<section>
+					<h2>Layout</h2>
+				</section>
+				<section>
+					<h3>Viewport</h3>
+					<pre class="fragment roll-in"><code><meta name="viewport" content="width=device-width, initial-scale=1"></code></pre>
+				</section>
+				<section>
+					<section>
+						<h3>Adaptive</h3>
+						<p class="fragment roll-in t-gray">%, auto, em...</p>
+					</section>
+					<section>
+						<h3>Responsive</h3>
+						<p class="fragment roll-in t-gray">Media Query</p>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h3>Media Queries</h3>
+						<ul>
+							<li class="t-gray">all</li>
+							<li class="t-gray">screen</li>
+							<li class="t-gray">print</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Media Queries</h3>
+						<pre class="fragment roll-in"><code><link href="css/screen.css" rel="stylesheet" 
+	type="text/css" media="screen and (max-width: 600px)" /></code></pre>
+					</section>
+					
+					<section>
+						<h3>Media Queries</h3>
+						<pre class="fragment roll-in"><code>@media screen and (min-width: 1200px) {
+// css...
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+// css...
+}
+
+@media screen and (max-device-width: 480px) {
+// css...
+}</code></pre>
+					</section>
+					
+					<section>
+						<h3>Not Support</h3>
+						<pre class="fragment roll-in"><code><!--[if lt IE 9]>
+    <script src=“http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
+<![endif]--></code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Show Case</h2>
+					</section>
+					<section>
+						<img src="images/show1_2.jpg" alt="" style=" vertical-align: top">
+						<img src="images/show1_1.jpg" alt="">
+					</section>
+					<section>
+						<img src="images/show3_1.jpg" alt="" style=" vertical-align: top">
+						<img src="images/show3_2.jpg" alt="">
+					</section>
+					<section style="width:150%;margin:0 -30%">
+						<img src="images/show2_1.jpg" alt="">
+						<img src="images/show2_2.jpg" alt="">
+						<img src="images/show2_3.jpg" alt="">
+					</section>
+				</section>
+				
+				<section>
+					<h3>Tricks</h3>
+					<ul>
+						<li class="fragment roll-in t-gray">Design for mobile first,pc as an extend</li>
+						<li class="fragment roll-in t-gray">Use a fluid grid</li>
+						<li class="fragment roll-in t-gray">Modular</li>
+						<li class="fragment roll-in t-gray">No iframe</li>
+						<li class="fragment roll-in t-gray">Relative Unit: 100% width or max-width, rem...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Tools</h3>
+					<ul class="fragment roll-in">
+						<li class="t-gray">Chrome：Developer tools</li>
+						<li class="t-gray">Firefox: Developer -> Responsive views</li>
+					</ul>
+				</section>
+				
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="">Q & A</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
